@@ -8,6 +8,10 @@ Built on Retrieval-Augmented Generation (RAG) technology.
 - Source document references with page numbers
 - Streaming responses
 
+## Documents
+Case documents sourced from [CourtListener](https://www.courtlistener.com) —
+a free, open-access legal database maintained by the Free Law Project.
+
 ## Setup
 1. Clone the repo
 2. Install dependencies: `pip install -r requirements.txt`
@@ -17,7 +21,11 @@ Built on Retrieval-Augmented Generation (RAG) technology.
    - `MODEL`
 4. Add documents to `documents/` folder
 5. Run indexer: `python indexer.py`
-6. Run app: `streamlit run app.py`
+6. Run app: `streamlit run streamlit_app.py`
+
+## Live Demo
+Try the live demo here (may be temporarily unavailable): https://gd-intelligence.streamlit.app
 
 ## Project
-Part of [Project Legal Intelligence](https://github.com/users/hsedalgnab/projects/1) — a large-scale RAG initiative for law firms.
+Part of [Project Legal Intelligence](https://github.com/users/hsedalgnab/projects/1) —
+a large-scale RAG initiative for law firms.
