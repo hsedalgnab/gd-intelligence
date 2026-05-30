@@ -2,5 +2,4 @@
 __pycache__/
 *.pyc
 faiss_index/
-documents/
 venv/
