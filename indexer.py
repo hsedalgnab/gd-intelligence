@@ -29,7 +29,7 @@ def build_index(docs):
     print(f"Total chunk: {len(chunk)}")
 
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-    db = FAISS.from_documents(chunks, embeddings)
+    db = FAISS.from_documents(chunk, embeddings)
     db.save_local(INDEX_DIR)
     print(f"FAISS index saved to {INDEX_DIR}")
 
